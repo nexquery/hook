@@ -16,3 +16,6 @@ Hook.ActionArray(buttons, (btn) =>
     btn[1].Text = "Hook!";
 });
 ```
+
+# Note
+The current form must be active for it to work.
