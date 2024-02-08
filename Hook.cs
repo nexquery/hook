@@ -1,4 +1,4 @@
-﻿/*****************************************************
+/*****************************************************
 *                                                    *
 *                      Hook.cs                       *
 *                                                    *
@@ -38,7 +38,7 @@ public class Hook
         {
             if (cx.InvokeRequired)
             {
-                cx.Invoke(new Action(() => { eylem(cx); }));
+                cx.Invoke((MethodInvoker)delegate { eylem(cx); });
             }
             else
             {
@@ -74,7 +74,7 @@ public class Hook
             {
                 if (control.InvokeRequired)
                 {
-                    control.Invoke(new Action(() => { action(controls); }));
+                    control.Invoke((MethodInvoker)delegate { action(controls); });
                 }
                 else
                 {
