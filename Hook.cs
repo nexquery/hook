@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-public class XHook
+public class Hook
 {
     public static T Get<T>(string formIsim, string isim) where T : Control
     {
