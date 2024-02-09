@@ -8,7 +8,7 @@ Label label = Hook.Get<Label>("Form1", "label1");
 Hook.Action(label, (x) =>
 {
     x.Text = "Hook!";
-    x.ForeColor = Color.Green;
+    x.ForeColor = Color.Black;
 });
 
 /* Multiple Hook */
